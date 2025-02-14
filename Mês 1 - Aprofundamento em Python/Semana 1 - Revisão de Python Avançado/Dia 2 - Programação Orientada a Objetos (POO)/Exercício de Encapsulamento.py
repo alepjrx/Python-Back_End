@@ -1,7 +1,7 @@
 '''
-1 - Criar uma classe [Produto] com atributos privados [_nome] [_preco] e um método [exibir_detalhes()]
+1 - Criar uma classe Produto com atributos privados _nome _preco e um método exibir_detalhes()
 
-2 - Crie métodos [set_preco(novo_preco)] e [get_preco()] para modificar e acessar [_preco]
+2 - Crie métodos set_preco(novo_preco) e get_preco() para modificar e acessar _preco
 
 3 - Teste criando objetos e modificando os valores com métodos apropriados
 '''
