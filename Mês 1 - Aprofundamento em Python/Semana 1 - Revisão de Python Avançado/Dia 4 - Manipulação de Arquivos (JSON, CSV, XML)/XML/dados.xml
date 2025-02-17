@@ -1,0 +1,12 @@
+<usuarios>
+    <usuario>
+        <nome>Ana</nome>
+        <idade>25</idade>
+        <cidade>Rio de Janeiro</cidade>
+    </usuario>
+    <usuario>
+        <nome>Carlos</nome>
+        <idade>30</idade>
+        <cidade>Curitiba</cidade>
+    </usuario>
+</usuarios>

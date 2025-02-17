@@ -1,0 +1,25 @@
+Manipulação de Arquivos CSV em Python
+
+ - O que é um arquivo CSV?
+
+ CSV (Comma-Separated Values) é um formato muito usado para armazenar dados tubulares, como em
+ planilhas e bancos de dados.
+
+ Exemplo de um Arquivo dados.csv:
+
+ nome,idade,cidade
+ Ana,25,Rio de Janeiro
+ Carlos,30,Curitiba
+ Mariana,22,Salvador
+
+ Cada linha representa um registro e os valores são separados por vírgula.
+
+  - Módulo CSV no Python
+
+ O Python tem um módulo csv para manipular arquivos CSV.
+ Principais funções:
+
+ csv.reader(arquivo) - Lê um arquivo CSV linha por linha
+ csv.DictReader(arquivo) - Lê um CSV e retorna cada linha como um dicionário
+ csv.writer(arquivo) - Escreve dados em um arquivo CSV
+ csv.DictWriter(arquivo) - Escreve um dicionário como linha CSV

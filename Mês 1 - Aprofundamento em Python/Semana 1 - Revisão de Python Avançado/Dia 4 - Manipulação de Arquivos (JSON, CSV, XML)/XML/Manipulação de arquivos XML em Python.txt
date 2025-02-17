@@ -1,0 +1,35 @@
+Manipulação de Arquivos XML em Python
+
+ - O que é XML?
+
+XML (eXtensible Markup Language) é um formato usado para armazenar e transportar dados de
+maneira estruturada. Ele é muito usado em web services, configurações de software e troca
+de dados entre sistemas.
+
+Exemplo de um arquivo XML:
+
+<usuarios>
+    <usuario>
+        <nome>Ana</nome>
+        <idade>25</idade>
+        <cidade>Rio de Janeiro</cidade>
+    </usuario>
+    <usuario>
+        <nome>Carlos</nome>
+        <idade>30</idade>
+        <cidade>Curitiba</cidade>
+    </usuario>
+</usuarios>
+
+Estrutura do XML:
+ - Cada <usuario> representa um item
+ - Os dados estão organizados em Tags (<nome> <idade> <cidade>)
+ - O elemento raiz é <usuarios>
+
+
+ - Módulos para manipular XML no Python:
+
+Python oferece bibliotecas para manipular XML. As mais comuns são:
+ xml.etree.ElementTree - Leitura, escrita e modificação de XML
+ lxml - Versão otimizada para parsing XML (parsing = analisar, validar e extrair dados estruturados)
+ xml.dom.minidom - Trabalhar com XML de forma mais legível
