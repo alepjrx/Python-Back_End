@@ -34,18 +34,18 @@ class GerenciadorTarefas: #criamos a classe GerenciadorTarefas para gerenciar a 
             json.dump(self.tarefas, f, indent=4, ensure_ascii=False) #salva a lista de tarefas no arquivo, formatando com indentação para melhor leitura
 
     def adicionar_tarefa(self, descricao): #adiciona uma nova tarefa à lista e salva no arquivo JSON
-        self.tarefas.append({'descricao': descricao})
+        self.tarefas.append({'descricao': descricao, 'status': 'Pendente'})
         self.salvar_tarefas()
         print(f'Tarefa "{descricao}" adicionada com sucesso.')
 
     def listar_tarefas(self): #lista as tarefas salvas no arquivo JSON
         if not self.tarefas:
-            print('Nenhuma tarefa encontrada.')
+            print('\nNenhuma tarefa encontrada.')
             return
         else:
             print('Lista de Tarefas')
             for indice, tarefa in enumerate(self.tarefas, start=1):
-                print(f'{indice}. {tarefa['descricao']}')
+                print(f'{indice}. {tarefa['descricao']} - {tarefa['status']}')
 
     def remover_tarefa(self, indice): #remove uma tarefa pelo índice informado
         try:
@@ -67,14 +67,14 @@ def exibir_menu(): #exibe o menu interativo e permite interações do usuário
     gerenciador = GerenciadorTarefas()
 
     while True:
-        print('\n=== Gerenciador de Tarefas ===')
+        print('\n=== Gerenciador de Tarefas ===\n')
         print('1. Adicionar Tarefa')
         print('2. Listar Tarefas')
         print('3. Remover Tarefa')
         print('4. Marcar Tarefa como Concluída')
         print('5. Sair do Programa')
 
-        opcao = input('Escolha uma Opção: ')
+        opcao = input('\nEscolha uma Opção: ')
 
         if opcao == '1':
             descricao = input('Digite a descrição da Tarefa: ')
