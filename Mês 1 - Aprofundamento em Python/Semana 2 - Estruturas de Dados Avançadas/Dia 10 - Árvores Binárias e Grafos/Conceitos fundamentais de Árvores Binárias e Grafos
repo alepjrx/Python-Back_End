@@ -1,0 +1,40 @@
+- Conceitos fundamentais de árvores binárias e grafos -
+
+    Árvore Binária:
+    Uma árvore binária é uma estrutura de dados onde cada nó tem no máximo dois filhos: um filho
+à esquerda e um filho à direita. Ela é útil em diversas aplicações como buscas rápidas, algoritmos
+de ordenação e representações de hierarquias.
+
+ Características importantes:
+ Raiz - O nó principal da árvore
+ Nó - Cada elemento da árvore que pode ter filhos
+ Filhos - Nós descendentes de outro nó
+ Folhas - Nós que não tem filhos
+ Altura da árvore - O número máximo de arestas entre a raiz e uma folha
+ Profundidade de um nó - O número de arestas do caminho entre esse nó e a raiz
+
+ Tipos de Árvore Binária:
+ 1 - Árvore Binária Completa: Todos os níveis estão totalmente preenchidos, exceto possivelmente o último,
+que deve ser preenchido da esquerda para a direita.
+ 2 - Árvore Binária Cheia: Todos os nós tem 0 ou 2 filhos.
+ 3 - Árvore Binária Balanceada: A diferença de altura entre os filhos esquerdo e direito de qualquer nó
+é no máximo 1.
+
+    -
+
+    Grafos:
+    Um grafo é uma estrutura de dados composta por um conjunto de nós (ou vértices) e um conjunto de arestas
+(ou arcos) que conectam os nós.
+
+ Tipos de Grafos:
+ 1 - Grafos não direcionados: As arestas não possuem direção (ou seja, se existe uma aresta entre o nó A
+e o nó B, podemos ir de A para B ou de B para A)
+ 2 - Grafos Direcionados: As arestas possuem direção (se existe uma aresta de A para B, não há garantia
+de que exista uma de B para A
+ 3 - Grafos Ponderados: Cada aresta possui um valor associado, conhecido como peso
+ 4 - Grafos Conexos: Existe um caminho entre qualquer par de vértices.
+
+ Representação dos grafos:
+ - Matriz de Adjacência: É uma matriz quadrada onde cada célula (i, j) indica se existe uma aresta entre
+os vértices i e j
+ - Lista de Adjacência: cada nó possui uma lista de nós aos quais está diretamente conectado.
